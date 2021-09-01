@@ -4,6 +4,8 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import OnboardingScreen from './src/screens/OnboardingScreen';
 import HomeScreen from './src/screens/HomeScreen';
+import Login from './src/screens/Login';
+import Signup from './src/screens/Signup';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 const Stack = createStackNavigator();
 
@@ -25,14 +27,16 @@ const App = () => {
   return (
     isAppFirstLaunched != null && (
       <NavigationContainer>
-        <Stack.Navigator screenOptions={{headerShown: false}}>
+        <Stack.Navigator screenOptions={{headerShown: false}} >
           {isAppFirstLaunched && (
-            <Stack.Screen
+            <Stack.Screen 
               name="OnboardingScreen"
               component={OnboardingScreen}
             />
           )}
           <Stack.Screen name="HomeScreen" component={HomeScreen} />
+          <Stack.Screen   name="Login" component={Login} />
+          <Stack.Screen  name="Signup" component={Signup} />
         </Stack.Navigator>
       </NavigationContainer>
     )

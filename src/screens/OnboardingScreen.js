@@ -18,20 +18,38 @@ const COLORS = {primary: '#282534', white: '#fff'};
 const slides = [
   {
     id: '1',
-    image: require('../images/image1.png'),
-    title: 'Best Digital Solution',
+    image: require('../images/mg1.jpg'),
+    title: 'The perfect app to level up your yoga',
     subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
     id: '2',
-    image: require('../images/image2.png'),
-    title: 'Achieve Your Goals',
+    image: require('../images/mg2.jpg'),
+    title: 'Your progress,at your fingertips',
     subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
     id: '3',
-    image: require('../images/image3.png'),
-    title: 'Increase Your Value',
+    image: require('../images/mg3.jpg'),
+    title: 'Get feedback anytime ,anywhere',
+    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  },
+  {
+    id: '4',
+    image: require('../images/mg4.jpg'),
+    title: 'Transform your teaching with AI',
+    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  },
+  {
+    id: '5',
+    image: require('../images/mg5.jpg'),
+    title: 'Provide real-time feedback',
+    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  },
+  {
+    id: '6',
+    image: require('../images/mg6.jpg'),
+    title: 'Chat anytime with your student',
     subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
 ];
@@ -99,7 +117,7 @@ const OnboardingScreen = ({navigation}) => {
                 styles.indicator,
                 currentSlideIndex == index && {
                   backgroundColor: COLORS.white,
-                  width: 25,
+                  width: 20,
                 },
               ]}
             />
